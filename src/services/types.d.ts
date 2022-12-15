@@ -1,3 +1,5 @@
+import { type } from "os";
+
 export type weather = 'sunny'; 'rainy' ; 'cloudy' ; 'windy'; 'stormy'
 export type visibility = 'great' ; 'good' ; 'ok' ; 'poor'
 
@@ -24,3 +26,4 @@ type SpecialDiaryEntry2 = DiaryEntry & {
 
 
 export type NonSensitiveinfoDiaryEntry = Omit<DiaryEntry,'comment'>
+export type NewDiaryEntry = Omit<DiaryEntry,'id'>
